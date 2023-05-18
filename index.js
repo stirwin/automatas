@@ -19,7 +19,7 @@ function encriptar(){
     }else{
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Bebes ingresar algún texto");
+        swal("oops","Debes ingresar un texto","warning");
     }
 }
 
@@ -41,6 +41,6 @@ function desencriptar(){
     }else{
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Bebes ingresar algún texto");
+        swal("oops","Debes ingresar un texto","warning");
     }
 }
