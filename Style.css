@@ -23,6 +23,7 @@
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f5fc;
+    resize: none;
     
 }
 
@@ -116,16 +117,86 @@
     padding: 1.8%;
 }
 
-.encriptado{
+.caja{
     display: flex;
-    justify-content: center;
     position: absolute;
+    border-radius: 25px;
     width: 30%;
     height: 90%;
     left: 60%;
     top: 5%;
     background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.texto2{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    top: 0%;
+    border: none;
+    border-radius: 25px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    background-color: #ffffff;
+    resize: none;
+    text-align: center;
+}
+
+.copiar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 250%;
+    left: 20%;
+    top: 87%;
+}
+
+.btn-copiar{
+    box-sizing: border-box;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.btn-copiar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
 }
 
 .mensajeEncriptado{
@@ -142,6 +213,7 @@
 }
 
 .mensajeEncriptado h2{
+    display: flex;
     width: 60%;
     font-family: "Inter";
     font-style: normal;
@@ -153,6 +225,7 @@
 }
 
 .mensajeEncriptado p{
+    display: flex;
     width: 80%;
     font-family: "Inter";
     font-style: normal;
@@ -164,6 +237,7 @@
 }
 
 .encriptado img{
+    display: flex;
     position: absolute;
     width: 80%;
     height: 50%;
@@ -208,6 +282,13 @@
         margin:0.3%;
         width: 47.5%;
         padding: 1.8%;
+    }
+
+    .caja{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
     }
     .encriptado{
         width: 80%;
