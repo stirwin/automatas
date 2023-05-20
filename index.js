@@ -35,7 +35,7 @@ function desencriptar(){
         document.getElementById("tituloMensaje").style.display = 'none';
         document.getElementById("parrafo").style.display = 'none'
         document.getElementById("texto2").style.display = 'flex';
-        document.getElementById("copiar").style.display = 'block'
+        document.getElementById("copiar").style.display = 'flex'
         document.getElementById("texto2").value = texto2;
         document.getElementById("texto").value = "";
     }else{
