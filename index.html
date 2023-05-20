@@ -20,28 +20,44 @@
                 rows="10" 
                 placeholder="Ingresa el texto aquí"
             ></textarea>
-        <div class="terminos">
+            <div class="terminos">
             <p>Solo letras minúsculas y sin acentos</p>
-        </div>
-        <div class="botones">
-            <button class="btn-encriptar" type="button" onclick="encriptar()">
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">
                 Encriptar
-            </button>
-            <input 
+                </button>
+                <input 
                 type="button" 
                 class="btn-desencriptar" 
                 value="desencriptar" 
                 onclick="desencriptar()">    
+            </div>
         </div>
+        
+        <div class="caja">
+            <div class="encriptado">
+                <img src="Imagenes/lupa.png" alt="" id="personaje">
+                <div class="mensajeEncriptado">
+                    <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+                <textarea 
+                name="texto" 
+                class="texto2" 
+                id="texto2" 
+                cols="30" 
+                rows="10" 
+            ></textarea>
+            <div class="copiar">
+                <input 
+                id="copiar"
+                type="button" 
+                class="btn-copiar" 
+                value="copiar">    
+            </div>
         </div>
-    <div class="encriptado">
-        <img src="Imagenes/lupa.png" alt="" id="personaje">
-        <div class="mensajeEncriptado" id="mensajeEncriptado">
-            <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
-        </div>
-    </div>
     </div> 
 </body>
 <script src="index.js"></script>
