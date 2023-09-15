@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="declarar">
+            <textarea 
+                name="texto" 
+                class="texto" 
+                id="texto" 
+                cols="30" 
+                rows="10" 
+                placeholder="Ingresa el texto aquí"
+            ></textarea>
+            <div class="terminos">
+            <p>Declare una sentencia valida</p>
+            </div>
+            <div class="botones">
+                <button class="btn-declarar" type="button" onclick="declarar()">
+                Declarar
+                </button>
+                <input 
+                type="button" 
+                class="btn-limpiar" 
+                value="limpiar" 
+                onclick="limpiar()">    
+            </div>
+        </div>
+        
+        <div class="caja">
+            <div class="declarado">
+                <img src="Imagenes/lupa.png" alt="" id="personaje">
+                <div class="mensajeDeclarado">
+                    <h2 id="tituloMensaje">Declaremos algunas variables</h2>
+                    <p id="parrafo">Ingresa el texto que deseas declarar</p>
+                </div>
+            </div>
+                <textarea 
+                name="texto" 
+                class="texto2" 
+                id="texto2" 
+                cols="30" 
+                rows="10" 
+            ></textarea>
+            
+        </div>
+    </div> 
+</body>
+<script src="index.js"></script>
+</html>
