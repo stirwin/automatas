@@ -163,6 +163,12 @@
     text-align: center;
 }
 
+.texto2:focus,
+.texto2:active{
+    border: none;
+    outline: none;
+}
+
 .mensajeDeclarado{
     display: flex;
     flex-direction: column;
