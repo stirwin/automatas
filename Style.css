@@ -10,7 +10,6 @@ background: black !important;
 nav{
     font-family: 'IBM Plex Mono', monospace !important;
 }
-
 /*fuentes*/
 .inter{
     font-family: 'Inter', sans-serif;
@@ -22,4 +21,20 @@ nav{
 /*Contenido*/
 .texto-grande{
     font-size: 64px;
+}
+
+.boton-comenzar{
+    margin-top: 150px;
+    padding: 10px 10px !important;
+    background: #1CF1A1 !important;
+    color: black;
+    font-weight: 400;
+    border-radius: 4px !important;
+    width: 8rem;
+}
+
+/*off canvas*/
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-height: 50vh !important;
 }

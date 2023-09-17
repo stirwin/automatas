@@ -18,11 +18,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!--Lotlie-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
   </head>
 
   <body>
-
-
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="#">Navbar</a>
@@ -60,41 +60,82 @@
       </div>
     </nav>
 
-
     <div class="container-fluid row mt-5">
-        <div class="col-sm-9">
-          <h1 class="texto-grande ms-3 text-light fw-semibold ">
-            ¡Bienvenidos! <br />
-            A La Actividad De <br>Autómatas <span style="color: #1CF1A1;"><</span>Gramaticales<span  style="color: #1CF1A1;">></span>
-          </h1>
-        </div>
-        <div class="col-sm-3 d-flex align-items-start mt-5">
-          <img src="/img/card 1.png" alt="" class="img-fluid" style="max-width: 90% !important;">
-        </div> 
+      <div class="col-sm-9">
+        <h1 class="texto-grande ms-3 text-light fw-semibold">
+          ¡Bienvenidos! <br />
+          A La Actividad De <br />Autómatas
+          <span style="color: #1cf1a1"><</span>Gramaticales<span
+            style="color: #1cf1a1"
+            >></span
+          >
+        </h1>
+      </div>
+      <div class="col-sm-3 d-flex align-items-start mt-5">
+        <img
+          src="/img/card 1.png"
+          alt=""
+          class="img-fluid"
+          style="max-width: 90% !important"
+        />
+      </div>
     </div>
 
     <div class="container-fluid row">
-      <div class="col-sm-4 ms-3 mt-3 ">
-        <h5 class="" style="color:#7B7B7B;padding-right: 60px;">Prepárate para sumergirte en
-          el fascinante mundo de la
-          programación y los autómatas 
-          gramaticales.</h5>
+    
+      <div class="col-sm-3 ms-3 mt-3">
+        <h5 class="mb-3" style="color: #7b7b7b;">
+          Prepárate para sumergirte en el fascinante mundo de la programación y
+          los autómatas gramaticales.
+        </h5>
+        <a class="imb boton-comenzar text-center btn mb-3"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Comenzar</a>
       </div>
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4"></div>
+        
+      <div class="col-sm-4" id="code">
+        <script>
+          var animacion = bodymovin.loadAnimation({
+            container: document.getElementById("code"),
+            path: "./img/code.json",
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            name: "demo", // Utiliza la variable que contiene la animación JSON
+            animationSpeed: 0.5,
+          });
+        </script>
+      </div>
 
+      <div class="col-sm-4 mt-5 mb-5 dflex justify-content-center align-items-center">
+        <img src="./img/card 2.png" alt="" class="img-fluid" />
+      </div>
+    </div>
+
+
+    <!--Text area de las respuestas -->
+    <div class="offcanvas offcanvas-bottom  bg-black" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="margin: 0 auto; max-width: 60%;max-height: 100vh;">
+      <div class="offcanvas-header">
+         <!--Header-->
+        <h5 class="imb text-light offcanvas-title" id="offcanvasBottomLabel">Validador de Declaraciones de Variables</h5>
+        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body small">
+        <!--Conotenido del body-->
+        <textarea class="form-control" type="text" id="input" placeholder="Introduce tu sentencia aquí"></textarea>
+        <button class="mt-2 btn btn-outline-dark" onclick="validar()">Validar</button>
+        <p class=" text-light" id="resultado"></p>
+
+      </div>
     </div>
     
+
+
+
+    
  
-<!-- <h1>Validador de Declaraciones de Variables</h1>
-  <textarea type="text" id="input" placeholder="Introduce tu sentencia aquí"></textarea>
-  <button onclick="validar()">Validar</button>
-  <p id="resultado"></p>
--->
 
 
-
-  <!-- funcionalidades del programa -->
+    <!-- funcionalidades del programa -->
     <script src="/script.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
