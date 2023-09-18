@@ -1,5 +1,14 @@
+ //estilos de code mirror
+ var editor = CodeMirror.fromTextArea(document.getElementById("input"), {
+  mode:'xml',
+  theme: 'dracula',
+  lineNumbers: true
+});
+
+
 function validar() {
-  var texarea = document.getElementById("input").value;
+  var texarea = editor.getValue(); 
+
   // Dividimos el input en líneas
   var lineas = texarea.split("\n");
 
