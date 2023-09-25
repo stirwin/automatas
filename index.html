@@ -5,6 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport"
+
+    
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
@@ -120,13 +122,14 @@
       <div class="offcanvas-header">
          <!--Header-->
         <h5 class="imb text-light offcanvas-title" id="offcanvasBottomLabel">Validador de Declaraciones de Variables</h5>
-        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button class="mt-2 btn text-light btn-outline-dark" onclick="validar()">Validar</button>
+        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>      
       </div>
       
       <div class="offcanvas-body small">
         <!--Conotenido del body-->
         <textarea class="form-control" type="text" id="input" placeholder="Introduce tu sentencia aquí"></textarea>
-        <button class="mt-2 btn btn-outline-dark" onclick="validar()">Validar</button>
+  
         <p class="imb text-light" id="resultado"></p>
       </div>
     </div>

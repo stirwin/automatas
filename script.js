@@ -1,6 +1,6 @@
  //estilos de code mirror
  var editor = CodeMirror.fromTextArea(document.getElementById("input"), {
-  mode:'xml',
+  mode:'javascript',
   theme: 'dracula',
   lineNumbers: true
 });
@@ -25,6 +25,12 @@ function validar() {
     // Agregamos el resultado a la cadena de resultados
     if (esValida) {
       resultado += "Línea " + (i + 1) + ": Sentencia válida\n";
+
+ // Extraemos las variables de la línea
+ var match = regex.exec(lineas[i]);
+ var variables = match[1].split(",");
+ resultado += "Variables: " + variables.join(", ") + "\n";
+      
     } else {
       // Si la línea no es válida, intentamos determinar el motivo
       if (!lineas[i].startsWith("declare ")) {
